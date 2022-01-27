@@ -1211,3 +1211,25 @@ header .circle {
 }
 /* End Contact */
 
+/* Hire me */
+
+.hireme {
+  padding: 12rem 0;
+}
+
+.hireme .container {
+  text-align: center;
+}
+
+.hireme .title {
+  margin-bottom: 1.3rem;
+}
+
+.hireme .text {
+  max-width: 1000px;
+  margin: 0 auto 1.6rem auto;
+}
+
+/* End Hire me */
+
+
