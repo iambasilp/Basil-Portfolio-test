@@ -886,7 +886,7 @@ header .circle {
 }
 
 .blog-card {
-  max-width: 350px;
+  max-width: 340px;
   width: 100%;
   overflow: hidden;
   background-color: var(--light-two);
@@ -907,7 +907,7 @@ header .circle {
 
 .blog-image {
   width: 100%;
-  height: 270px;
+  height: 250px;
   position: relative;
   overflow: hidden;
 }
@@ -923,7 +923,7 @@ header .circle {
 }
 
 .blog-content {
-  padding: 2.1rem 2.2rem 2.7rem 2.2rem;
+  padding: 2rem 2rem 2.5rem 2rem;
 }
 
 .blog-info {
@@ -936,7 +936,7 @@ header .circle {
   color: var(--main-color);
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 1.05rem;
+  font-size: 14px;
   letter-spacing: 2px;
 }
 
