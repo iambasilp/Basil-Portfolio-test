@@ -339,6 +339,10 @@ nav.open .hamburger-menu .bar:after {
 nav.open .links {
   transform: translateX(0);
 }
+nav.open .links a{
+  line-height: 2rem;
+
+}
 
 .header-content .container.grid-2 {
   grid-template-columns: 2.5fr 3.5fr;
