@@ -996,6 +996,9 @@ header .circle {
 .testi-content {
   margin-top: 4.5rem;
 }
+.testimonials .image{
+  padding: 0 3rem;
+}
 
 .reviews {
   overflow: hidden;
