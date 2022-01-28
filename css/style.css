@@ -454,6 +454,7 @@ header .circle {
   padding: 3rem 2rem;
   overflow: hidden;
   transition: 0.3s;
+  border-radius: 3%;
 }
 
 .card:before {
