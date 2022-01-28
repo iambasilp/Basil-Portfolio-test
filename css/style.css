@@ -623,7 +623,7 @@ header .circle {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
-  height: 330px;
+  height: 500px;
   width: 100%;
   cursor: pointer;
 }
@@ -1588,8 +1588,8 @@ header .circle {
   }
 
   .gallery-image {
-    height: 250px;
-    max-width: 325px;
+    height: 450px;
+    max-width: 400px;
   }
 
   .gallery-image .img-overlay {
@@ -1947,14 +1947,14 @@ header .circle {
     left: 90%;
     top: 54%;
   }
-
+  
   .grid-item {
     width: 50%;
   }
 
   .gallery-image {
-    height: 210px;
-    max-width: 270px;
+    height: 350px;
+    max-width: 350px;
   }
 
   .background-bg {
