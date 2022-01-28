@@ -242,9 +242,17 @@ nav .container {
 .logo {
   font-size: 49px;
   font-weight: bold;
-
+  position: relative;
   display: flex;
   align-items: center;
+}
+.logo::before{
+  content: "";
+  position: absolute;
+  bottom: .7rem;
+  width: 90%;
+  height: 4px;
+  background-color: var(--main-color);
 }
 .logo a {
   color: #003366;
@@ -1526,8 +1534,9 @@ header .circle {
   }
 
   .logo a {
-    font-size: 35px;
+    font-size: 43px;
   }
+ 
 
   .links a {
     font-size: 0.8rem;
