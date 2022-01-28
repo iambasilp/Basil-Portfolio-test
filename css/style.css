@@ -145,6 +145,7 @@ img {
 .section-header {
   text-align: center;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .title {
@@ -371,6 +372,50 @@ nav.open .links a{
 
 .header-content .image .img-element {
   max-width: 710px;
+}
+.header-social {
+  position: absolute;
+  top: 24rem;
+  right: .5rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 4.5rem;
+  align-items: center;
+  z-index: 20;
+}
+
+.header-social-follow {
+  font-weight: 500;
+  font-size:1rem;
+  color: var(--main-color);
+  position: relative;
+  transform: rotate(90deg);
+}
+
+.header-social-follow::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--main-color);
+  right: -55%;
+  top: 50%;
+}
+
+.header-social-links {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+}
+
+.header-social-link {
+  font-size: 1rem;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.header-social-link:hover {
+  transform: translateX(0.25rem);
 }
 
 header .points1 {
@@ -2238,6 +2283,7 @@ header .circle {
     padding: 0.8rem 1.4rem;
     margin: 0.25rem 0;
   }
+  
 }
 
 /* End Responsive */
