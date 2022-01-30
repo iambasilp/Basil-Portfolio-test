@@ -98,3 +98,22 @@ var mySwiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
   },
 });
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 400,
+  // reset: true
+});
+
+sr.reveal(`.home__data, .contact-box `);
+sr.reveal(`.home__img`, { delay: 500 });
+sr.reveal(`.home__social`, { delay: 600 });
+sr.reveal(`.about__img, .testimonials__img, .contact__data,.wrap`, { origin: "left" });
+sr.reveal(`.about__data, .testimonials__data, .contact__form `, { origin: "right" });
+sr.reveal(`.card-wrap, .grid-item, .footer, .hireme__data`, {
+  interval: 80,
+});
