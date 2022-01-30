@@ -99,7 +99,6 @@ var mySwiper = new Swiper(".swiper-container", {
   },
 });
 
-
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: "top",
@@ -112,8 +111,32 @@ const sr = ScrollReveal({
 sr.reveal(`.home__data, .contact-box `);
 sr.reveal(`.home__img`, { delay: 500 });
 sr.reveal(`.home__social`, { delay: 600 });
-sr.reveal(`.about__img, .testimonials__img, .contact__data,.wrap`, { origin: "left" });
-sr.reveal(`.about__data, .testimonials__data, .contact__form `, { origin: "right" });
+sr.reveal(`.about__img, .testimonials__img, .contact__data,.wrap`, {
+  origin: "left",
+});
+sr.reveal(`.about__data, .testimonials__data, .contact__form `, {
+  origin: "right",
+});
 sr.reveal(`.card-wrap, .grid-item, .footer, .hireme__data`, {
   interval: 80,
 });
+
+// form submission
+function sendEmail() {
+  Email.send({
+    Host: "smtp.gmail.com.com",
+    Username: "basilpulikuth3@gmail.com",
+    Password: "cM_BP@21",
+    To: "basilxg321@gmail.com",
+    From: document.getElementById("email").value,
+    Subject: "New Contact Form Enquiry",
+    Body: "First name: " + document.getElementById("First name").value
+          + "<br> Last name: "  + document.getElementById("Last name").value
+          + "<br> Phone number: "  + document.getElementById("Phone number").value
+          + "<br> Email: "  + document.getElementById("email").value
+          + "<br> Message: "  + document.getElementById("message").value
+         
+  }).then(
+    (message) => alert("Message Send Successfully"));
+}
+// form submission end

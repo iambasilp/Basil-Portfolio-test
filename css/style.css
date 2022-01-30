@@ -207,6 +207,10 @@ img {
   font-weight: 500;
   transition: 0.3s;
 }
+button{
+  outline: none;
+  border: none;
+}
 
 .btn:hover {
   background-color: #08498a;

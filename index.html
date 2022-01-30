@@ -82,7 +82,7 @@
 
         <div class="header-content">
           <div class="container grid-2">
-            <div class="column-1 home__data" >
+            <div class="column-1 home__data">
               <h1 class="header-title">Basil Pulikuth</h1>
               <p class="text">
                 Hello, I'm Basil Pulikuth, web design and developer. Iam
@@ -139,9 +139,7 @@
         <div class="container">
           <div class="section-header">
             <h3 class="title" data-title="What I Do">Services</h3>
-            <p class="text">
-              I Provided more services for you let's check it
-            </p>
+            <p class="text">I Provided more services for you let's check it</p>
           </div>
 
           <div class="cards">
@@ -340,7 +338,7 @@
         </div>
       </section>
 
-      <section class="records ">
+      <section class="records">
         <div class="overlay overlay-sm">
           <img src="./img/shapes/square.png" alt="" class="shape square1" />
           <img src="./img/shapes/square.png" alt="" class="shape square2" />
@@ -409,12 +407,9 @@
 
                     <p class="review-text">
                       Our site is beautiful! It is easy to navigate. The support
-<<<<<<< HEAD
-                      has been remarkable.
-=======
-                      has been remarkable for WordPress; if I don’t understand
-                      something, or can’t accomplish a task.
->>>>>>> basil
+                      <<<<<<< HEAD has been remarkable. ======= has been
+                      remarkable for WordPress; if I don’t understand something,
+                      or can’t accomplish a task. >>>>>>> basil
                     </p>
 
                     <div class="review-info">
@@ -499,7 +494,11 @@
             </div>
 
             <div class="column-2 image">
-              <img src="./img/testi.png" alt="" class="img-element testimonials__img" />
+              <img
+                src="./img/testi.png"
+                alt=""
+                class="img-element testimonials__img"
+              />
             </div>
           </div>
         </div>
@@ -526,48 +525,62 @@
                   <div class="contact-icon">
                     <i class="fas fa-paper-plane"></i>
                   </div>
-                  <p class="info-text"><a href="mailto:basilxg321@@mail.com"
-                    class="mail">basilxg321@mail.com</a></p>
+                  <p class="info-text">
+                    <a href="mailto:basilxg321@@mail.com" class="mail"
+                      >basilxg321@mail.com</a
+                    >
+                  </p>
                 </div>
 
                 <div class="information">
                   <div class="contact-icon">
                     <i class="fas fa-phone-alt"></i>
                   </div>
-                  <p class="info-text"><a href="tel:+919074397747">+91 9074397747</a></p>
+                  <p class="info-text">
+                    <a href="tel:+919074397747">+91 9074397747</a>
+                  </p>
                 </div>
               </div>
             </div>
+            <form onsubmit="sendEmail(); reset(); return false;">
+              <div class="contact-form contact__form">
+                <h3 class="title">Contact me</h3>
+                <div class="row">
+                  <input
+                    type="text"
+                    class="contact-input" id="First name"
+                    placeholder="First Name"
+                  />
+                  <input
+                    type="text"
+                    class="contact-input" id="Last name"
+                    placeholder="Last Name"
+                  />
+                </div>
 
-            <div class="contact-form contact__form">
-              <h3 class="title">Contact me</h3>
-              <div class="row">
-                <input
-                  type="text"
-                  class="contact-input"
-                  placeholder="First Name"
-                />
-                <input
-                  type="text"
-                  class="contact-input"
-                  placeholder="Last Name"
-                />
-              </div>
+                <div class="row">
+                  <input
+                    type="tel" id="Phone number"
+                    class="contact-input"
+                    placeholder="Phone"
+                  />
+                  <input
+                    type="email" id="email"
+                    class="contact-input"
+                    placeholder="Email"
+                  />
+                </div>
 
-              <div class="row">
-                <input type="text" class="contact-input" placeholder="Phone" />
-                <input type="email" class="contact-input" placeholder="Email" />
+                <div class="row">
+                  <textarea
+                    name="message"
+                    class="contact-input textarea" id="message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
               </div>
-
-              <div class="row">
-                <textarea
-                  name="message"
-                  class="contact-input textarea"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <a href="#" class="btn">Send</a>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -700,6 +713,7 @@
     <script src="./js/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/scrollreveal.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./js/app.js"></script>
   </body>
 </html>
